@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kashuk Cosmetology Academy | Ўзбекистон</title>
+    <meta name="description"
+        content="Kashuk Academy - Ўзбекистонда энг мавкеи косметология ва сўрма рассомлик академияси">
+
+    <style>
+        :root {
+            --primary-gold: #ffd700;
+            --dark-gold: #daa520;
+            --black: #000000;
+            --dark-bg: #0f0f0f;
+            --dark-card: #1a1a1a;
+            --gray-text: #b0b0b0;
+            --light-gray: #e8e8e8;
+            --white: #ffffff;
+            --hover-gold: #ffed4e;
+            --border-gold: rgba(255, 215, 0, 0.3);
+            --gold-glow: rgba(255, 215, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--black);
+            color: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--black);
+            border-bottom: 2px solid var(--primary-gold);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px var(--gold-glow);
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+        }
+
+        .phone-link {
+            font-size: 14px;
+            color: var(--primary-gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .phone-link:hover {
+            color: var(--hover-gold);
+            text-shadow: 0 0 10px var(--primary-gold);
+        }
+
+        .lang-switcher {
+            display: flex;
+            gap: 8px;
+        }
+
+        .lang-btn {
+            background: transparent;
+            border: 2px solid var(--primary-gold);
+            color: var(--primary-gold);
+            padding: 6px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover,
+        .lang-btn.active {
+            background: var(--primary-gold);
+            color: var(--black);
+            box-shadow: 0 0 15px var(--primary-gold);
+        }
+
+        /* Header/Navigation */
+        .header {
+            background-color: var(--black);
+            border-bottom: 2px solid var(--primary-gold);
+            box-shadow: 0 4px 15px var(--gold-glow);
+        }
+
+        .header.sticky {
+            position: sticky;
+            top: 48px;
+            z-index: 50;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 0 15px var(--primary-gold);
+            transition: all 0.3s ease;
+        }
+
+        .header-logo:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px var(--primary-gold);
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--primary-gold);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-shadow: 0 0 15px var(--primary-gold);
+            letter-spacing: 2px;
+        }
+
+        .logo:hover {
+            text-shadow: 0 0 25px var(--hover-gold);
+            transform: scale(1.05);
+        }
+
+        .logo-accent {
+            color: var(--hover-gold);
+            font-weight: 900;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .nav-menu.mobile {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, var(--black) 0%, #1a1a1a 100%);
+            padding: 16px;
+            border-bottom: 2px solid var(--primary-gold);
+        }
+
+        .nav-menu.mobile.active {
+            display: flex;
+        }
+
+        .nav-menu.mobile li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border-gold);
+        }
+
+        .nav-link {
+            color: var(--light-gray);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-bottom: 4px;
+            font-weight: 500;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--primary-gold);
+            transition: width 0.3s ease;
+            box-shadow: 0 0 10px var(--primary-gold);
+        }
+
+        .nav-link:hover {
+            color: var(--primary-gold);
+            text-shadow: 0 0 10px var(--primary-gold);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .cta-button {
+            padding: 10px 24px;
+            background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+            color: var(--black);
+            border: none;
+            border-radius: 24px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px var(--gold-glow);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, var(--hover-gold), var(--primary-gold));
+            box-shadow: 0 0 25px var(--primary-gold);
+            transform: translateY(-2px);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            gap: 6px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary-gold);
+            border-radius: 2px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 5px var(--primary-gold);
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu.desktop {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .cta-button {
+                display: none;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, var(--black) 0%, #0a0a0a 50%, var(--black) 100%);
+        }
+
+        .hero-background {
+            position: absolute;
+            inset: 0;
+            opacity: 0.15;
+            background: radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.4), transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(218, 165, 32, 0.3), transparent 50%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            position: relative;
+            z-index: 10;
+            padding: 80px 0;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 10px 16px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(218, 165, 32, 0.1));
+            border: 2px solid var(--primary-gold);
+            border-radius: 24px;
+            color: var(--primary-gold);
+            font-size: 13px;
+            font-weight: 600;
+            width: fit-content;
+            box-shadow: 0 0 15px var(--gold-glow);
+        }
+
+        .hero-badge:hover {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(218, 165, 32, 0.15));
+            box-shadow: 0 0 25px var(--primary-gold);
+        }
+
+        .hero-title {
+            font-size: 56px;
+            font-weight: bold;
+            line-height: 1.2;
+            text-shadow: 0 0 20px var(--gold-glow);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-gold), var(--hover-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 10px var(--gold-glow));
+        }
+
+        .hero-subtitle {
+            font-size: 18px;
+            color: var(--light-gray);
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .btn {
+            padding: 12px 32px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+            color: var(--black);
+            box-shadow: 0 0 15px var(--gold-glow);
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, var(--hover-gold), var(--primary-gold));
+            box-shadow: 0 0 30px var(--primary-gold);
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--primary-gold);
+            color: var(--primary-gold);
+            background-color: transparent;
+            box-shadow: 0 0 10px var(--gold-glow);
+        }
+
+        .btn-secondary:hover {
+            background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+            color: var(--black);
+            box-shadow: 0 0 25px var(--primary-gold);
+        }
+
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-image {
+            max-width: 100%;
+            height: auto;
+            filter: drop-shadow(0 0 40px var(--primary-gold));
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                padding: 40px 0;
+            }
+
+            .hero-title {
+                font-size: 36px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .hero-logo {
+                max-height: 300px;
+            }
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--black);
+            padding: 80px 0;
+            border-top: 2px solid var(--primary-gold);
+            box-shadow: inset 0 4px 15px var(--gold-glow);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            color: var(--white);
+            text-shadow: 0 0 20px var(--gold-glow);
+        }
+
+        .title-underline {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-gold), var(--dark-gold));
+            margin: 0 auto 16px;
+            border-radius: 2px;
+            box-shadow: 0 0 15px var(--primary-gold);
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            color: var(--light-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.9));
+            border: 2px solid var(--primary-gold);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px var(--gold-glow);
+        }
+
+        .service-card:hover {
+            border-color: var(--hover-gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(218, 165, 32, 0.05));
+            transform: translateY(-8px);
+            box-shadow: 0 0 40px var(--primary-gold);
+        }
+
+        .service-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--primary-gold);
+            margin-bottom: 16px;
+            text-shadow: 0 0 10px var(--gold-glow);
+        }
+
+        .service-items {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .service-items li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--light-gray);
+            font-size: 14px;
+        }
+
+        .check-mark {
+            color: var(--primary-gold);
+            font-weight: bold;
+            filter: drop-shadow(0 0 5px var(--primary-gold));
+        }
+
+        /* Features Section */
+        .features {
+            background-color: var(--black);
+            padding: 80px 0;
+            border-top: 2px solid var(--primary-gold);
+            box-shadow: inset 0 4px 15px var(--gold-glow);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-box {
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover .feature-number {
+            transform: scale(1.1);
+            box-shadow: 0 0 30px var(--primary-gold);
+        }
+
+        .phone-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 18px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #f5d27a;
+            /* tilla rang text */
+            background: linear-gradient(135deg, #0b0b0b, #1c1c1c);
+            /* qora fon */
+            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
+            transition: all 0.25s ease;
+        }
+
+        .phone-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(245, 210, 122, 0.25);
+        }
+
+        .phone-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f5d27a, #d4af37);
+            /* tilla ikonka foni */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .phone-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: #111;
+            /* qora ikonka */
+        }
+
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.25s ease;
+        }
+
+        .social-btn svg {
+            width: 18px;
+            height: 18px;
+            fill: #d4af37;
+            /* tilla rang */
+        }
+
+        .social-btn:hover {
+            background: #d4af37;
+            transform: translateY(-2px);
+        }
+
+        .social-btn:hover svg {
+            fill: #111;
+        }
+
+        .contact-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #111;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: #d4af37;
+            /* tilla */
+        }
+
+
+        .feature-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(218, 165, 32, 0.1));
+            border: 2px solid var(--primary-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 16px;
+            font-size: 32px;
+            font-weight: bold;
+            color: var(--primary-gold);
+            box-shadow: 0 0 20px var(--gold-glow);
+            transition: all 0.3s ease;
+        }
+
+        .feature-label {
+            color: var(--light-gray);
+            font-size: 14px;
+        }
+
+        /* Staff Section */
+        .staff {
+            background-color: var(--black);
+            padding: 80px 0;
+            border-top: 2px solid var(--primary-gold);
+            box-shadow: inset 0 4px 15px var(--gold-glow);
+        }
+
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 48px;
+        }
+
+        .staff-card {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.9));
+            border: 2px solid var(--primary-gold);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px var(--gold-glow);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .staff-card:hover {
+            border-color: var(--hover-gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(218, 165, 32, 0.05));
+            transform: translateY(-8px);
+            box-shadow: 0 0 40px var(--primary-gold);
+        }
+
+        .staff-image {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), var(--black));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .staff-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease;
+        }
+
+        .staff-card:hover .staff-image img {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        .staff-info {
+            padding: 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .staff-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--primary-gold);
+            text-shadow: 0 0 10px var(--gold-glow);
+            margin-bottom: 4px;
+        }
+
+        .staff-title {
+            font-size: 14px;
+            color: var(--hover-gold);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .staff-courses {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-top: 12px;
+            border-top: 2px solid var(--border-gold);
+        }
+
+        .staff-courses li {
+            font-size: 13px;
+            color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .staff-courses li::before {
+            content: "✓";
+            color: var(--primary-gold);
+            font-weight: bold;
+            font-size: 16px;
+            text-shadow: 0 0 5px var(--primary-gold);
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--black);
+            padding: 80px 0;
+            border-top: 2px solid var(--primary-gold);
+            box-shadow: inset 0 4px 15px var(--gold-glow);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .about-text {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .about-paragraph {
+            font-size: 16px;
+            color: var(--light-gray);
+            line-height: 1.8;
+        }
+
+        .about-features {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-top: 16px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            color: var(--light-gray);
+            padding: 12px;
+            border-left: 3px solid var(--primary-gold);
+            border-radius: 4px;
+            background: rgba(255, 215, 0, 0.05);
+        }
+
+        .feature-icon {
+            font-size: 24px;
+        }
+
+        .about-image {
+            width: 100%;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), var(--black));
+            border: 2px solid var(--primary-gold);
+            border-radius: 16px;
+            box-shadow: 0 0 30px var(--gold-glow);
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .about-image {
+                display: none;
+            }
+
+            .staff-image {
+                height: 280px;
+            }
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--black);
+            padding: 80px 0;
+            border-top: 2px solid var(--primary-gold);
+            box-shadow: inset 0 4px 15px var(--gold-glow);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            margin-top: 48px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--primary-gold);
+            text-shadow: 0 0 5px var(--gold-glow);
+        }
+
+        .form-input {
+            padding: 12px 16px;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.9));
+            border: 2px solid var(--primary-gold);
+            border-radius: 8px;
+            color: var(--white);
+            font-size: 14px;
+            transition: all 0.3s ease;
+            font-family: inherit;
+            box-shadow: 0 0 10px var(--gold-glow);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--hover-gold);
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(218, 165, 32, 0.05));
+            box-shadow: 0 0 20px var(--primary-gold);
+        }
+
+        .form-input::placeholder {
+            color: var(--gray-text);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 16px;
+        }
+
+        .contact-icon {
+            font-size: 28px;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(218, 165, 32, 0.1));
+            border: 2px solid var(--primary-gold);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 0 15px var(--gold-glow);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover .contact-icon {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.3), rgba(218, 165, 32, 0.15));
+            box-shadow: 0 0 25px var(--primary-gold);
+        }
+
+        .contact-details h4 {
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--primary-gold);
+            margin-bottom: 4px;
+            text-shadow: 0 0 5px var(--gold-glow);
+        }
+
+        .contact-details p {
+            font-size: 14px;
+            color: var(--light-gray);
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(180deg, #0a0a0a 0%, var(--black) 100%);
+            padding: 60px 0 20px;
+            border-top: 2px solid var(--primary-gold);
+            box-shadow: inset 0 4px 15px var(--gold-glow);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            color: var(--primary-gold);
+            margin-bottom: 16px;
+            text-shadow: 0 0 10px var(--gold-glow);
+            font-size: 16px;
+        }
+
+        .footer-section p {
+            color: var(--light-gray);
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-section ul li a {
+            color: var(--light-gray);
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--primary-gold);
+            text-shadow: 0 0 10px var(--primary-gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-btn {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(218, 165, 32, 0.1));
+            border: 2px solid var(--primary-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-gold);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            box-shadow: 0 0 10px var(--gold-glow);
+        }
+
+        .social-btn:hover {
+            background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+            color: var(--black);
+            box-shadow: 0 0 20px var(--primary-gold);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 2px solid var(--primary-gold);
+            padding-top: 24px;
+            text-align: center;
+            color: var(--gray-text);
+            font-size: 13px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--black);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--primary-gold), var(--dark-gold));
+            border-radius: 4px;
+            box-shadow: 0 0 10px var(--gold-glow);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, var(--hover-gold), var(--primary-gold));
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <a href="tel:+998901234567" class="phone-link">
+                    <span class="phone-icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.3.6 1.3 1.3v3.5c0 .7-.6 1.3-1.3 1.3C9.8 21.6 2.4 14.2 2.4 5.3 2.4 4.6 3 4 3.7 4h3.5c.7 0 1.3.6 1.3 1.3 0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.2 2.2z" />
+                        </svg>
+                    </span>
+                    +998 90 123 45 67
+                </a>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="changeLanguage('uz')">UZ</button>
+                    <button class="lang-btn" onclick="changeLanguage('ru')">RU</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="header sticky">
+        <nav class="container nav-content">
+            <div class="logo-container">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cf8WIeJTptbYKSuTDCNjTGBNTyJi7t.png"
+                    alt="Kashuk Academy Logo" class="header-logo">
+                <div class="logo">
+                    Kashuk <span class="logo-accent">Academy</span>
+                </div>
+            </div>
+            <ul class="nav-menu desktop">
+                <li><a href="#services" data-uz="Хидматлар" data-ru="Услуги" data-en="Services"
+                        class="nav-link">Хидматлар</a></li>
+                <li><a href="#staff" data-uz="Xодимлар" data-ru="Преподаватели" data-en="Staff"
+                        class="nav-link">Xодимлар</a></li>
+                <li><a href="#about" data-uz="Тўғрисида" data-ru="О нас" data-en="About" class="nav-link">Тўғрисида</a>
+                </li>
+                <li><a href="#contact" data-uz="Алоқа" data-ru="Контакты" data-en="Contact" class="nav-link">Алоқа</a>
+                </li>
+            </ul>
+
+            <button class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        <ul class="nav-menu mobile" id="mobileMenu">
+            <li><a href="#services" data-uz="Хидматлар" data-ru="Услуги" data-en="Services">Хидматлар</a></li>
+            <li><a href="#staff" data-uz="Xодимлар" data-ru="Преподаватели" data-en="Staff">Xодимлар</a></li>
+            <li><a href="#about" data-uz="Тўғрисида" data-ru="О нас" data-en="About">Тўғрисида</a></li>
+            <li><a href="#contact" data-uz="Алоқа" data-ru="Контакты" data-en="Contact">Алоқа</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge" data-uz="✨ KASHUK COSMETOLOGY SCHOOL" data-ru="✨ KASHUK COSMETOLOGY SCHOOL"
+                    data-en="✨ KASHUK COSMETOLOGY SCHOOL">✨ KASHUK COSMETOLOGY SCHOOL</div>
+                <h1 class="hero-title">
+                    <span data-uz="Ҳузур ва" data-ru="Комфорт и" data-en="Comfort and">Ҳузур ва</span>
+                    <span class="gradient-text" data-uz="Граниёз" data-ru="Блеск" data-en="Radiance">Граниёз</span>
+                </h1>
+                <p class="hero-subtitle"
+                    data-uz="Ҳозирги жамон косметология ва сўрма рассомлик техникасини ўзлаштиринг. Ўзбекистонида энг машҳур касб ўқитиш маркази."
+                    data-ru="Овладейте современными техниками косметологии и татуажа бровей. Самый известный центр профессионального обучения в Узбекистане."
+                    data-en="Master modern cosmetology and eyebrow tattooing techniques. The most renowned professional training center in Uzbekistan.">
+                    Ҳозирги жамон косметология ва сўрма рассомлик техникасини ўзлаштиринг. Ўзбекистонида энг машҳур касб
+                    ўқитиш маркази.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" data-uz="ЭНДДИ ЎЗИЛ" data-ru="ЗАРЕГИСТРИРУЙТЕСЬ"
+                        data-en="REGISTER NOW">ЭНДДИ ЎЗИЛ</button>
+                    <button class="btn btn-secondary" data-uz="БАТАФСИЛ" data-ru="ПОДРОБНЕЕ"
+                        data-en="LEARN MORE">БАТАФСИЛ</button>
+                </div>
+            </div>
+            <div class="hero-logo">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4621-nh4pA6wdE7Sh5qnrnq9SxYMmWIMPAs.jpg"
+                    alt="Kashuk Academy Logo" class="logo-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-uz="Ёнғин Хизматлар" data-ru="Наши услуги" data-en="Our Services">Ёнғин
+                    Хизматлар</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle"
+                    data-uz="Барча косметологик ва эстетик услугалар учун биз сизни қабул қиламиз"
+                    data-ru="Мы предлагаем полный спектр косметологических и эстетических услуг"
+                    data-en="We offer a complete range of cosmetic and aesthetic services">Барча косметологик ва эстетик
+                    услугалар учун биз сизни қабул қиламиз</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 class="service-title" data-uz="Микроблейдинг" data-ru="Микроблейдинг" data-en="Microblading">
+                        Микроблейдинг</h3>
+                    <ul class="service-items">
+                        <li><span class="check-mark">✓</span> <span data-uz="Мойли сўрма" data-ru="Нежные брови"
+                                data-en="Gentle Brows">Мойли сўрма</span></li>
+                        <li><span class="check-mark">✓</span> <span data-uz="Автоматик техника"
+                                data-ru="Автоматическая техника" data-en="Automatic technique">Автоматик техника</span>
+                        </li>
+                        <li><span class="check-mark">✓</span> <span data-uz="Профессионал" data-ru="Профессионально"
+                                data-en="Professional">Профессионал</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-title" data-uz="Ласер Процедур" data-ru="Лазерные процедуры"
+                        data-en="Laser Procedures">Ласер Процедур</h3>
+                    <ul class="service-items">
+                        <li><span class="check-mark">✓</span> <span data-uz="Сустин Ласер" data-ru="Устойчивый лазер"
+                                data-en="Durable Laser">Сустин Ласер</span></li>
+                        <li><span class="check-mark">✓</span> <span data-uz="Қўдират" data-ru="Мощный"
+                                data-en="Powerful">Қўдират</span></li>
+                        <li><span class="check-mark">✓</span> <span data-uz="Ҳифза" data-ru="Безопасно"
+                                data-en="Safe">Ҳифза</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-title" data-uz="Қўллилик" data-ru="Маникюр" data-en="Nails">Қўллилик</h3>
+                    <ul class="service-items">
+                        <li><span class="check-mark">✓</span> <span data-uz="Манюр" data-ru="Маникюр"
+                                data-en="Manicure">Манюр</span></li>
+                        <li><span class="check-mark">✓</span> <span data-uz="Педикюр" data-ru="Педикюр"
+                                data-en="Pedicure">Педикюр</span></li>
+                        <li><span class="check-mark">✓</span> <span data-uz="Дизайн" data-ru="Дизайн"
+                                data-en="Design">Дизайн</span></li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3 class="service-title" data-uz="Сўрма Услуги" data-ru="Услуги татуажа" data-en="Tattoo Services">
+                        Сўрма Услуги</h3>
+                    <ul class="service-items">
+                        <li><span class="check-mark">✓</span> <span data-uz="Қўйдирма Сўрма"
+                                data-ru="Перманентный татуаж" data-en="Permanent Tattoo">Қўйдирма Сўрма</span></li>
+                        <li><span class="check-mark">✓</span> <span data-uz="Рассомлик" data-ru="Живопись"
+                                data-en="Artistry">Рассомлик</span></li>
+                        <li><span class="check-mark">✓</span> <span data-uz="Иноватив" data-ru="Инновативный"
+                                data-en="Innovative">Иноватив</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-number">5+</div>
+                    <p class="feature-label" data-uz="Йилик Тажриба" data-ru="Лет опыта" data-en="Years Experience">
+                        Йилик Тажриба</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-number">2000+</div>
+                    <p class="feature-label" data-uz="Қаноатбахш Талабалар" data-ru="Довольных студентов"
+                        data-en="Satisfied Students">Қаноатбахш Талабалар</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-number">100%</div>
+                    <p class="feature-label" data-uz="Ижодий Методлар" data-ru="Творческие методы"
+                        data-en="Creative Methods">Ижодий Методлар</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-number">24/7</div>
+                    <p class="feature-label" data-uz="Қўлай Шартлар" data-ru="Удобные условия"
+                        data-en="Convenient Terms">Қўлай Шартлар</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section Added -->
+    <section id="staff" class="staff">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-uz="Бизнинг Ходимлар" data-ru="Наши преподаватели" data-en="Our Staff">
+                    Бизнинг Ходимлар</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle" data-uz="Касбга эга ва тажрибали ўқитувчилар жамоаси"
+                    data-ru="Команда опытных и высококвалифицированных преподавателей"
+                    data-en="Team of experienced and highly qualified instructors">Касбга эга ва тажрибали ўқитувчилар
+                    жамоаси</p>
+            </div>
+
+            <div class="staff-grid">
+                <!-- Instructor 1 -->
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CbhfcnHgIlCjnS5qBdEEEUKu3aufS2.png"
+                            alt="Махбуба Саломовна">
+                    </div>
+                    <div class="staff-info">
+                        <h3 class="staff-name" data-uz="Махбуба Саломовна" data-ru="Махбуба Саломовна"
+                            data-en="Makhbuba Salomovna">Махбуба Саломовна</h3>
+                        <p class="staff-title" data-uz="Косметолог-коуч" data-ru="Косметолог-коуч"
+                            data-en="Cosmetologist-Coach">Косметолог-коуч</p>
+                        <ul class="staff-courses">
+                            <li data-uz="30 йиллик тажриба" data-ru="30 лет опыта" data-en="30 years experience">30
+                                йиллик тажриба</li>
+                            <li data-uz="Нитевой лифтинг" data-ru="Нитевой лифтинг" data-en="Thread lifting">Нитевой
+                                лифтинг</li>
+                            <li data-uz="Полимолочная кислота" data-ru="Полимолочная кислота" data-en="Polylactic acid">
+                                Полимолочная кислота</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Instructor 2 -->
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4499.JPG-qGIl3ZZD5H6i5DiXzvV64ES8KWYGPH.jpeg"
+                            alt="Санам Механовна">
+                    </div>
+                    <div class="staff-info">
+                        <h3 class="staff-name" data-uz="Санам Механовна" data-ru="Санам Механовна"
+                            data-en="Sanam Mekhanovna">Санам Механовна</h3>
+                        <p class="staff-title" data-uz="Дерматовенеролог" data-ru="Дерматовенеролог"
+                            data-en="Dermatovenereologist">Дерматовенеролог</p>
+                        <ul class="staff-courses">
+                            <li data-uz="Эстетик косметология" data-ru="Эстетическая косметология"
+                                data-en="Aesthetic cosmetology">Эстетик косметология</li>
+                            <li data-uz="Уй медицина" data-ru="Домашняя медицина" data-en="Home medicine">Уй медицина
+                            </li>
+                            <li data-uz="Мезотерапия" data-ru="Мезотерапия" data-en="Mesotherapy">Мезотерапия</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Instructor 3 -->
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4398.JPG-Gm8EWvFWEDgBuY78jmFapTiYcbDo0u.jpeg"
+                            alt="Гузаль Уралговна">
+                    </div>
+                    <div class="staff-info">
+                        <h3 class="staff-name" data-uz="Гузаль Уралговна" data-ru="Гузаль Уралговна"
+                            data-en="Guzal Uralgovna">Гузаль Уралговна</h3>
+                        <p class="staff-title" data-uz="Ўқитувчи" data-ru="Преподаватель" data-en="Instructor">Ўқитувчи
+                        </p>
+                        <ul class="staff-courses">
+                            <li data-uz="Эстетика ва тери қўлини" data-ru="Эстетика и уход за кожей"
+                                data-en="Aesthetics and skincare">Эстетика ва тери қўлини</li>
+                            <li data-uz="10 йиллик тажриба" data-ru="10 лет опыта" data-en="10 years experience">10
+                                йиллик тажриба</li>
+                            <li data-uz="Кашук мактабида ўқитади" data-ru="Преподает в школе Кашук"
+                                data-en="Teaches at Kashuk School">Кашук мактабида ўқитади</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2 class="section-title" data-uz="Кашук Академияси Тўғрисида" data-ru="О Kashuk Academy"
+                    data-en="About Kashuk Academy">Кашук Академияси Тўғрисида</h2>
+                <div class="title-underline"></div>
+                <p class="about-paragraph"
+                    data-uz="Биз Ўзбекистонда энг юқори сифатли косметологик таълим берувчи муассаса. Ҳар бир талаба шахсий эътибор ва кўллилик техникасини ўзлаштириши мумкин."
+                    data-ru="Мы являемся ведущим учреждением, предоставляющим высочайшее качество косметологического образования в Узбекистане. Каждый студент может овладеть передовыми техниками под личным руководством."
+                    data-en="We are the leading institution providing the highest quality cosmetological education in Uzbekistan. Each student can master advanced techniques under personal guidance.">
+                    Биз Ўзбекистонда энг юқори сифатли косметологик таълим берувчи муассаса. Ҳар бир талаба шахсий
+                    эътибор ва кўллилик техникасини ўзлаштириши мумкин.</p>
+                <p class="about-paragraph"
+                    data-uz="Ҳозирги йилда 2000 дан ортиқ талаба мувaffaqiyatли ўзи битирдилар ва сўрма рассомлик саҳосида дийоралар қилмоқда."
+                    data-ru="В этом году более 2000 студентов успешно завершили обучение и работают в сфере татуажа бровей."
+                    data-en="This year, over 2000 students successfully completed their training and are working in the eyebrow tattooing industry.">
+                    Ҳозирги йилда 2000 дан ортиқ талаба мувaffaqiyatли ўзи битирдилар ва сўрма рассомлик саҳосида
+                    дийоралар қилмоқда.</p>
+                <div class="about-features">
+                    <div class="about-feature">
+                        <span class="feature-icon">🎓</span>
+                        <span data-uz="Сертификалашган ўқитувчилар" data-ru="Сертифицированные учителя"
+                            data-en="Certified Teachers">Сертификалашган ўқитувчилар</span>
+                    </div>
+                    <div class="about-feature">
+                        <span class="feature-icon">🏆</span>
+                        <span data-uz="Масъул ва юқори сифата ишчи қўллар"
+                            data-ru="Ответственные и высокопрофессиональные кадры"
+                            data-en="Responsible and highly professional staff">Масъул ва юқори сифата ишчи
+                            қўллар</span>
+                    </div>
+                </div>
+            </div>
+            <img class="about-image"
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4628%20%281%29-iyw8LPA7XbAiIsmcWVU0zP3iuhUVVr.jpg"
+                alt="Kashuk Academy" />
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-uz="Бир Дама Алоқа Қоилсин" data-ru="Свяжитесь с нами"
+                    data-en="Get In Touch">Бир Дама Алоқа Қоилсин</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label data-uz="Сизнинг Исмингиз" data-ru="Ваше имя" data-en="Your Name">Сизнинг
+                            Исмингиз</label>
+                        <input type="text" class="form-input" placeholder="Исм" data-uz-placeholder="Исм"
+                            data-ru-placeholder="Имя" data-en-placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-uz="Телефон" data-ru="Телефон" data-en="Phone">Телефон</label>
+                        <input type="tel" class="form-input" placeholder="+998" data-uz-placeholder="+998"
+                            data-ru-placeholder="+7" data-en-placeholder="+1" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-uz="Сўз" data-ru="Сообщение" data-en="Message">Сўз</label>
+                        <textarea rows="4" class="form-input" placeholder="Сизнинг хабарингиз"
+                            data-uz-placeholder="Сизнинг хабарингиз" data-ru-placeholder="Ваше сообщение"
+                            data-en-placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-uz="ЖЎНАТИШ" data-ru="ОТПРАВИТЬ"
+                        data-en="SEND">ЖЎНАТИШ</button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Location -->
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-uz="Манзил" data-ru="Адрес" data-en="Address">Манзил</h4>
+                            <p data-uz="Ташкент, Мирзо Улугбек ч., 123" data-ru="Ташкент, улица Мирзо Улугбека, 123"
+                                data-en="Tashkent, Mirzo Ulugbek St., 123">
+                                Ташкент, Мирзо Улугбек ч., 123
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Phone -->
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.3.6 1.3 1.3v3.5c0 .7-.6 1.3-1.3 1.3C9.8 21.6 2.4 14.2 2.4 5.3 2.4 4.6 3 4 3.7 4h3.5c.7 0 1.3.6 1.3 1.3 0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.2 2.2z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-uz="Телефон" data-ru="Телефон" data-en="Phone">Телефон</h4>
+                            <p>+998 90 123 45 67</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <!-- Email -->
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6zm3-.5 7 4.8 7-4.8H5zm14 2.6-7 4.8-7-4.8V18h14V8.1z" />
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4 data-uz="Электрон Почтаси" data-ru="Электронная почта" data-en="Email">
+                                Электрон Почтаси
+                            </h4>
+                            <p>info@kashuk.uz</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 data-uz="Kashuk Academy" data-ru="Kashuk Academy" data-en="Kashuk Academy">Kashuk Academy</h3>
+                    <p data-uz="Энг мушаррафи ва сўрма рассомлик академияси" data-ru="Самая престижная академия татуажа"
+                        data-en="Most prestigious tattoo academy">Энг мушаррафи ва сўрма рассомлик академияси</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-uz="Йўналиши" data-ru="Направления" data-en="Directions">Йўналиши</h4>
+                    <ul>
+                        <li><a href="#" data-uz="Микроблейдинг" data-ru="Микроблейдинг"
+                                data-en="Microblading">Микроблейдинг</a></li>
+                        <li><a href="#" data-uz="Ласер" data-ru="Лазер" data-en="Laser">Ласер</a></li>
+                        <li><a href="#" data-uz="Қўллилик" data-ru="Маникюр" data-en="Nails">Қўллилик</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-uz="Хизматлар" data-ru="Услуги" data-en="Services">Хизматлар</h4>
+                    <ul>
+                        <li><a href="#" data-uz="Таълим" data-ru="Образование" data-en="Education">Таълим</a></li>
+                        <li><a href="#" data-uz="Мастеркласс" data-ru="Мастер-класс"
+                                data-en="Masterclass">Мастеркласс</a></li>
+                        <li><a href="#" data-uz="Консултация" data-ru="Консультация"
+                                data-en="Consultation">Консултация</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-uz="Алоқа" data-ru="Контакты" data-en="Contact">Алоқа</h4>
+                    <div class="social-links">
+                        <!-- Facebook -->
+                        <a href="#" class="social-btn" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V12H16l-.4 3h-2.1v7A10 10 0 0 0 22 12z" />
+                            </svg>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm5.8-.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z" />
+                            </svg>
+                        </a>
+
+                        <!-- YouTube -->
+                        <a href="#" class="social-btn" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M23 7.5s-.2-1.7-.9-2.4c-.8-.9-1.7-.9-2.1-1C17.2 3.9 12 3.9 12 3.9h0s-5.2 0-8 .2c-.4.1-1.3.1-2.1 1C1.2 5.8 1 7.5 1 7.5S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.7.9 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.7.2 7.7.2s5.2 0 8-.2c.4-.1 1.3-.1 2.1-1 .7-.7.9-2.4.9-2.4s.2-1.9.2-3.8v-1.4C23.2 9.4 23 7.5 23 7.5zM9.6 14.6V9.4l4.8 2.6-4.8 2.6z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-uz="© 2025 Kashuk Cosmetology Academy. Барча ҳуқуқлар сақланди."
+                    data-ru="© 2025 Kashuk Cosmetology Academy. Все права защищены."
+                    data-en="© 2025 Kashuk Cosmetology Academy. All rights reserved.">© 2025 Kashuk Cosmetology Academy.
+                    Барча ҳуқуқлар сақланди.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("active");
+        }
+
+        // Close menu when link clicked
+        document.querySelectorAll(".nav-menu.mobile a").forEach((link) => {
+            link.addEventListener("click", () => {
+                document.getElementById("mobileMenu").classList.remove("active");
+            });
+        });
+
+        // Language Switching
+        let currentLanguage = "uz";
+
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+
+            // Update active button
+            document.querySelectorAll(".lang-btn").forEach((btn) => {
+                btn.classList.remove("active");
+            });
+            event.target.classList.add("active");
+
+            // Update all text content
+            document.querySelectorAll("[data-" + lang + "]").forEach((element) => {
+                element.textContent = element.getAttribute("data-" + lang);
+            });
+
+            // Update form placeholders
+            document.querySelectorAll("[data-" + lang + "-placeholder]").forEach((element) => {
+                element.placeholder = element.getAttribute("data-" + lang + "-placeholder");
+            });
+
+            // Update HTML lang attribute
+            document.documentElement.lang = lang;
+
+            // Save preference
+            localStorage.setItem("preferredLanguage", lang);
+        }
+
+        // Load saved language preference
+        window.addEventListener("DOMContentLoaded", () => {
+            const savedLang = localStorage.getItem("preferredLanguage") || "uz";
+            if (savedLang !== "uz") {
+                document.querySelector(`.lang-btn[onclick="changeLanguage('${savedLang}')"]`).click();
+            }
+        });
+
+        // Form Submission
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const name = form.querySelector('input[type="text"]').value;
+            const phone = form.querySelector('input[type="tel"]').value;
+            const message = form.querySelector("textarea").value;
+
+            // Simple validation
+            if (!name || !phone || !message) {
+                alert(
+                    currentLanguage === "uz"
+                        ? "Барча майдонларни толдиринг"
+                        : currentLanguage === "ru"
+                            ? "Заполните все поля"
+                            : "Please fill all fields"
+                );
+                return;
+            }
+
+            console.log("Form submitted:", { name, phone, message });
+            form.reset();
+
+            const successMsg =
+                currentLanguage === "uz"
+                    ? "Жўнатилди! Биз сиз билан алоқага чиқамиз."
+                    : currentLanguage === "ru"
+                        ? "Отправлено! Мы свяжемся с вами."
+                        : "Sent! We will contact you.";
+
+            alert(successMsg);
+        }
+
+        // Smooth scroll enhancement
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                const href = this.getAttribute("href");
+                if (href !== "#" && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = "fadeInUp 0.6s ease forwards";
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards and feature boxes
+        document.querySelectorAll(".service-card, .feature-box, .contact-item, .staff-card").forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Header sticky shadow on scroll
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector(".header");
+            if (window.scrollY > 100) {
+                header.style.boxShadow = "0 4px 12px rgba(251, 191, 36, 0.1)";
+            } else {
+                header.style.boxShadow = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>
