@@ -1,12 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="uz">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kashuk Cosmetology Academy | Ўзбекистон</title>
-    <meta name="description"
-        content="Kashuk Academy - Ўзбекистонда энг мавкеи косметология ва сўрма рассомлик академияси">
+    <title>Kashuk Cosmetology School | Ўзбекистон</title>
+    <meta name="description" content="Kashuk Academy - Ўзбекистонда энг мавкеи косметология ва сўрма рассомлик академияси">
 
     <style>
         :root {
@@ -400,12 +399,9 @@
         }
 
         @keyframes float {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: translateY(0px);
             }
-
             50% {
                 transform: translateY(-20px);
             }
@@ -541,91 +537,83 @@
             transform: scale(1.1);
             box-shadow: 0 0 30px var(--primary-gold);
         }
+.phone-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #f5d27a; /* tilla rang text */
+    background: linear-gradient(135deg, #0b0b0b, #1c1c1c); /* qora fon */
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
+    transition: all 0.25s ease;
+}
 
-        .phone-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 10px 18px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 500;
-            color: #f5d27a;
-            /* tilla rang text */
-            background: linear-gradient(135deg, #0b0b0b, #1c1c1c);
-            /* qora fon */
-            box-shadow: 0 8px 22px rgba(0, 0, 0, 0.6);
-            transition: all 0.25s ease;
-        }
+.phone-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(245, 210, 122, 0.25);
+}
 
-        .phone-link:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 14px 30px rgba(245, 210, 122, 0.25);
-        }
+.phone-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f5d27a, #d4af37); /* tilla ikonka foni */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .phone-icon {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, #f5d27a, #d4af37);
-            /* tilla ikonka foni */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .phone-icon svg {
-            width: 18px;
-            height: 18px;
-            fill: #111;
-            /* qora ikonka */
-        }
+.phone-icon svg {
+    width: 18px;
+    height: 18px;
+    fill: #111; /* qora ikonka */
+}
 
 
-        .social-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: #111;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.25s ease;
-        }
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s ease;
+}
 
-        .social-btn svg {
-            width: 18px;
-            height: 18px;
-            fill: #d4af37;
-            /* tilla rang */
-        }
+.social-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: #d4af37; /* tilla rang */
+}
 
-        .social-btn:hover {
-            background: #d4af37;
-            transform: translateY(-2px);
-        }
+.social-btn:hover {
+    background: #d4af37;
+    transform: translateY(-2px);
+}
 
-        .social-btn:hover svg {
-            fill: #111;
-        }
+.social-btn:hover svg {
+    fill: #111;
+}
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
 
-        .contact-icon {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background: #111;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .contact-icon svg {
-            width: 20px;
-            height: 20px;
-            fill: #d4af37;
-            /* tilla */
-        }
+.contact-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #d4af37; /* tilla */
+}
 
 
         .feature-number {
@@ -805,27 +793,32 @@
         }
 
         .about-image {
-            width: 100%;
-            aspect-ratio: 1;
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), var(--black));
-            border: 2px solid var(--primary-gold);
-            border-radius: 16px;
-            box-shadow: 0 0 30px var(--gold-glow);
-        }
+    width: 100%;
+    aspect-ratio: 1;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), var(--black));
+    border: 2px solid var(--primary-gold);
+    border-radius: 16px;
+    box-shadow: 0 0 30px var(--gold-glow);
+    object-fit: cover;
+}
 
-        @media (max-width: 768px) {
-            .about-grid {
-                grid-template-columns: 1fr;
-                gap: 32px;
-            }
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
 
-            .about-image {
-                display: none;
-            }
+    .about-image {
+        aspect-ratio: 4 / 3;   /* telefon uchun yaxshi proporsiya */
+        border-radius: 14px;
+    }
 
-            .staff-image {
-                height: 280px;
-            }
+    .staff-image {
+        height: 260px;
+    }
+}
+
         }
 
         /* Contact Section */
@@ -1049,607 +1042,782 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
+        /* ===== About Section (Dark / Gold) ===== */
+.about {
+    padding: 90px 0;
+    background: #0d0d0d; /* qora fon */
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text {
+    font-family: "Inter", sans-serif;
+}
+
+/* Sarlavha */
+.section-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #d4af37; /* tillarang */
+    margin-bottom: 12px;
+}
+
+.title-underline {
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, #d4af37, #f5e6a8);
+    border-radius: 5px;
+    margin-bottom: 28px;
+}
+
+/* Matn */
+.about-paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #f1e8c9; /* och tillarang */
+    margin-bottom: 18px;
+}
+
+/* Kichik sarlavha */
+.about-subtitle {
+    font-size: 21px;
+    font-weight: 600;
+    margin: 32px 0 14px;
+    color: #d4af37;
+}
+
+/* List */
+.about-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 22px;
+}
+
+.about-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    color: #f5e6a8;
+    font-size: 15.5px;
+}
+
+.about-list li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Rasm */
+.about-image {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 20px 50px rgba(212, 175, 55, 0.25);
+    object-fit: cover;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .about-image {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 27px;
+    }
+
+    .about-paragraph {
+        font-size: 15px;
+    }
+}
+/* ===== Mobile Menu (Gold Style) ===== */
+.nav-menu.mobile {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    background: #0b0b0b; /* qora fon */
+    text-align: center;
+}
+
+/* li */
+.nav-menu.mobile li {
+    margin: 18px 0;
+}
+
+/* link */
+.nav-menu.mobile li a {
+    text-decoration: none;      /* linkligi bilinmasin */
+    color: #d4af37;             /* tillarang */
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+/* hover / bosilganda */
+.nav-menu.mobile li a:hover,
+.nav-menu.mobile li a:active {
+    color: #f5e6a8;
+}
+
+/* pastdan nozik chiziq (hoverda chiqadi) */
+.nav-menu.mobile li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #d4af37, #f5e6a8);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-menu.mobile li a:hover::after {
+    width: 100%;
+}
+
+/* ===== Mobile only ===== */
+@media (min-width: 768px) {
+    .nav-menu.mobile {
+        display: none;
+    }
+}
+
+
+
     </style>
 </head>
-
 <body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-content">
-                <a href="tel:+998901234567" class="phone-link">
-                    <span class="phone-icon">
-                        <svg viewBox="0 0 24 24" aria-hidden="true">
-                            <path
-                                d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.3.6 1.3 1.3v3.5c0 .7-.6 1.3-1.3 1.3C9.8 21.6 2.4 14.2 2.4 5.3 2.4 4.6 3 4 3.7 4h3.5c.7 0 1.3.6 1.3 1.3 0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.2 2.2z" />
-                        </svg>
-                    </span>
-                    +998 90 123 45 67
-                </a>
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="container">
+        <div class="top-bar-content">
+            <a href="tel:+998901234567" class="phone-link">
+    <span class="phone-icon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.3.6 1.3 1.3v3.5c0 .7-.6 1.3-1.3 1.3C9.8 21.6 2.4 14.2 2.4 5.3 2.4 4.6 3 4 3.7 4h3.5c.7 0 1.3.6 1.3 1.3 0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.2 2.2z"/>
+        </svg>
+    </span>
+                +998 90 937 36 30
+            </a>
 
-                <div class="lang-switcher">
-                    <button class="lang-btn active" onclick="changeLanguage('uz')">UZ</button>
-                    <button class="lang-btn" onclick="changeLanguage('ru')">RU</button>
-                    <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+            <div class="lang-switcher">
+
+                <button class="lang-btn" onclick="changeLanguage('ru')">RU</button>
+                <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header/Navigation -->
+<header class="header sticky">
+    <nav class="container nav-content">
+        <div class="logo-container">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cf8WIeJTptbYKSuTDCNjTGBNTyJi7t.png" alt="Kashuk Academy Logo" class="header-logo">
+            <div class="logo">
+                Kashuk <span class="logo-accent">Cosmetology School</span>
+            </div>
+        </div>
+        <ul class="nav-menu desktop">
+            <li><a href="#services" data-uz="Хидматлар" data-ru="Услуги" data-en="Services" class="nav-link">Хидматлар</a></li>
+            <li><a href="#staff" data-uz="Xодимлар" data-ru="Преподаватели" data-en="Staff" class="nav-link">Xодимлар</a></li>
+            <li><a href="#about" data-uz="Тўғрисида" data-ru="О нас" data-en="About" class="nav-link">Тўғрисида</a></li>
+            <li><a href="#contact" data-uz="Алоқа" data-ru="Контакты" data-en="Contact" class="nav-link">Алоқа</a></li>
+        </ul>
+
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <ul class="nav-menu mobile" id="mobileMenu">
+        <li><a href="#services" data-uz="Хидматлар" data-ru="Услуги" data-en="Services">Хидматлар</a></li>
+        <li><a href="#staff" data-uz="Xодимлар" data-ru="Преподаватели" data-en="Staff">Xодимлар</a></li>
+        <li><a href="#about" data-uz="Тўғрисида" data-ru="О нас" data-en="About">Тўғрисида</a></li>
+        <li><a href="#contact" data-uz="Алоқа" data-ru="Контакты" data-en="Contact">Алоқа</a></li>
+    </ul>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-background"></div>
+    <div class="container hero-content">
+        <div class="hero-text">
+            <div class="hero-badge" data-uz="✨ KASHUK COSMETOLOGY SCHOOL" data-ru="✨ KASHUK COSMETOLOGY SCHOOL" data-en="✨ KASHUK COSMETOLOGY SCHOOL">✨ KASHUK COSMETOLOGY SCHOOL</div>
+            <h1 class="hero-title">
+                <span data-uz="Ҳузур ва" data-ru="Комфорт и" data-en="Comfort and">Ҳузур ва</span>
+                <span class="gradient-text" data-uz="Граниёз" data-ru="Блеск" data-en="Radiance">Граниёз</span>
+            </h1>
+            <p class="hero-subtitle" data-uz="Ҳозирги жамон косметология ва сўрма рассомлик техникасини ўзлаштиринг. Ўзбекистонида энг машҳур касб ўқитиш маркази." data-ru="Овладейте современными техниками косметологии и татуажа бровей. Самый известный центр профессионального обучения в Узбекистане." data-en="Master modern cosmetology and eyebrow tattooing techniques. The most renowned professional training center in Uzbekistan.">Ҳозирги жамон косметология ва сўрма рассомлик техникасини ўзлаштиринг. Ўзбекистонида энг машҳур касб ўқитиш маркази.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" data-uz="ЭНДДИ ЎЗИЛ" data-ru="ЗАРЕГИСТРИРУЙТЕСЬ" data-en="REGISTER NOW">ЭНДДИ ЎЗИЛ</button>
+                <button class="btn btn-secondary" data-uz="БАТАФСИЛ" data-ru="ПОДРОБНЕЕ" data-en="LEARN MORE">БАТАФСИЛ</button>
+            </div>
+        </div>
+        <div class="hero-logo">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4621-nh4pA6wdE7Sh5qnrnq9SxYMmWIMPAs.jpg" alt="Kashuk Academy Logo" class="logo-image">
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" data-uz="Ёнғин Хизматлар" data-ru="Наши услуги" data-en="Our Services">Наши услуги</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle" data-uz="Барча косметологик ва эстетик услугалар учун биз сизни қабул қиламиз" data-ru="Мы предлагаем полный спектр косметологических и эстетических услуг" data-en="We offer a complete range of cosmetic and aesthetic services">Мы предлагаем полный спектр косметологических и эстетических услуг</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3 class="service-title"> Эстетическая косметология</h3>
+                <p class="service-desc">Интенсивный курс 1 месяц</p>
+            </div>
+
+            <div class="service-card">
+                <h3 class="service-title"> Домашняя медсестра</h3>
+                <p class="service-desc">Интенсивный курс  6 занятий</p>
+            </div>
+
+            <div class="service-card">
+                <h3 class="service-title"> Ботулинотерапия</h3>
+                <p class="service-desc">Интенсивный курс 3 дня</p>
+            </div>
+
+            <div class="service-card">
+                <h3 class="service-title"> Контурная пластика (филлеры)</h3>
+                <p class="service-desc">Интенсивный курс 3 дня/p>
+            </div>
+
+            <div class="service-card">
+                <h3 class="service-title"> Тредлифтинг (нити)</h3>
+                <p class="service-desc">Интенсивный курс 3 дня</p>
+            </div>
+
+            <div class="service-card">
+                <h3 class="service-title"> Полимолочная кислота</h3>
+                <p class="service-desc">Интенсивный курс  1 день</p>
+            </div>
+
+            <div class="service-card">
+                <h3 class="service-title"> Перманентный макияж</h3>
+                <p class="service-desc">Интенсивный курс 1 месяц</p>
+            </div>
+            <div class="service-card">
+                <h3 class="service-title"> Мезотерапия  +плазмолифтинг</h3>
+                <p class="service-desc">Интенсивный курс 4 дня</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Features Section -->
+<section class="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-number">5+</div>
+                <p class="feature-label" data-uz="Йилик Тажриба" data-ru="Лет опыта" data-en="Years Experience">Йилик Тажриба</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-number">2000+</div>
+                <p class="feature-label" data-uz="Қаноатбахш Талабалар" data-ru="Довольных студентов" data-en="Satisfied Students">Қаноатбахш Талабалар</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-number">100%</div>
+                <p class="feature-label" data-uz="Ижодий Методлар" data-ru="Творческие методы" data-en="Creative Methods">Ижодий Методлар</p>
+            </div>
+            <div class="feature-box">
+                <div class="feature-number">24/7</div>
+                <p class="feature-label" data-uz="Қўлай Шартлар" data-ru="Удобные условия" data-en="Convenient Terms">Қўлай Шартлар</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Staff Section Added -->
+<section id="staff" class="staff">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" data-uz="Бизнинг Ходимлар" data-ru="Наши преподаватели" data-en="Our Staff">Бизнинг Ходимлар</h2>
+            <div class="title-underline"></div>
+            <p class="section-subtitle" data-uz="Касбга эга ва тажрибали ўқитувчилар жамоаси" data-ru="Команда опытных и высококвалифицированных преподавателей" data-en="Team of experienced and highly qualified instructors">Касбга эга ва тажрибали ўқитувчилар жамоаси</p>
+        </div>
+
+        <div class="staff-grid">
+            <!-- Instructor 1 -->
+            <div class="staff-card">
+                <div class="staff-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bZZUeE9PM5jBY4iUY14uAyU05fFTAO.png" alt="Махбуба Саломовна">
+                </div>
+                <div class="staff-info">
+                    <h3 class="staff-name" data-uz="Махбуба Саломовна" data-ru="Махбуба Саломовна" data-en="Makhbuba Salomovna">Махбуба Саломовна</h3>
+                    <p class="staff-title" data-uz="Косметолог-коуч" data-ru="Косметолог-коуч" data-en="Cosmetologist-Coach">Косметолог-коуч</p>
+                    <ul class="staff-courses">
+                        <li data-uz="30 йиллик тажриба" data-ru="30 лет опыта" data-en="30 years experience">30 йиллик тажриба</li>
+                        <li data-uz="Нитевой лифтинг" data-ru="Нитевой лифтинг" data-en="Thread lifting">Нитевой лифтинг</li>
+                        <li data-uz="Полимолочная кислота" data-ru="Полимолочная кислота" data-en="Polylactic acid">Полимолочная кислота</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Instructor 2 -->
+            <div class="staff-card">
+                <div class="staff-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-2STyRMqpH61r6NcYv5qnZnIYDbUupo.png" alt="Санам Механовна">
+                </div>
+                <div class="staff-info">
+                    <h3 class="staff-name" data-uz="Санам Механовна" data-ru="Санам Механовна" data-en="Sanam Mekhanovna">Санам Механовна</h3>
+                    <p class="staff-title" data-uz="Дерматовенеролог" data-ru="Дерматовенеролог" data-en="Dermatovenereologist">Дерматовенеролог</p>
+                    <ul class="staff-courses">
+                        <li data-uz="Эстетик косметология" data-ru="Эстетическая косметология" data-en="Aesthetic cosmetology">Эстетик косметология</li>
+                        <li data-uz="Уй медицина" data-ru="Домашняя медицина" data-en="Home medicine">Уй медицина</li>
+                        <li data-uz="Мезотерапия" data-ru="Мезотерапия" data-en="Mesotherapy">Мезотерапия</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Instructor 3 -->
+            <div class="staff-card">
+                <div class="staff-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xdsW4jJwVUpgTraDzIDJM9VHqkNw5J.png" alt="Гузаль Уралговна">
+                </div>
+                <div class="staff-info">
+                    <h3 class="staff-name" data-uz="Гузаль Уралговна" data-ru="Гузаль Уралговна" data-en="Guzal Uralgovna">Гузаль Уралговна</h3>
+                    <p class="staff-title" data-uz="Ўқитувчи" data-ru="Преподаватель" data-en="Instructor">Ўқитувчи</p>
+                    <ul class="staff-courses">
+                        <li data-uz="Эстетика ва тери қўлини" data-ru="Эстетика и уход за кожей" data-en="Aesthetics and skincare">Эстетика ва тери қўлини</li>
+                        <li data-uz="10 йиллик тажриба" data-ru="10 лет опыта" data-en="10 years experience">10 йиллик тажриба</li>
+                        <li data-uz="Кашук мактабида ўқитади" data-ru="Преподает в школе Кашук" data-en="Teaches at Kashuk School">Кашук мактабида ўқитади</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<!-- About Section -->
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container about-grid">
+        <div class="about-text">
+            <!-- Added data-en attribute with English translation -->
+            <h2 class="section-title"
+                data-ru="О школе косметологии Светланы Кашук"
+                data-en="About Kashuk Academy">
+                О школе косметологии Светланы Кашук
+            </h2>
+            <div class="title-underline"></div>
 
-    <!-- Header/Navigation -->
-    <header class="header sticky">
-        <nav class="container nav-content">
-            <div class="logo-container">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-cf8WIeJTptbYKSuTDCNjTGBNTyJi7t.png"
-                    alt="Kashuk Academy Logo" class="header-logo">
-                <div class="logo">
-                    Kashuk <span class="logo-accent">Academy</span>
-                </div>
-            </div>
-            <ul class="nav-menu desktop">
-                <li><a href="#services" data-uz="Хидматлар" data-ru="Услуги" data-en="Services"
-                        class="nav-link">Хидматлар</a></li>
-                <li><a href="#staff" data-uz="Xодимлар" data-ru="Преподаватели" data-en="Staff"
-                        class="nav-link">Xодимлар</a></li>
-                <li><a href="#about" data-uz="Тўғрисида" data-ru="О нас" data-en="About" class="nav-link">Тўғрисида</a>
-                </li>
-                <li><a href="#contact" data-uz="Алоқа" data-ru="Контакты" data-en="Contact" class="nav-link">Алоқа</a>
-                </li>
+            <!-- Added data-en for first paragraph -->
+            <p class="about-paragraph"
+               data-ru="Школа косметологии Светланы Кашук — это образовательный центр и практика в области эстетической косметологии и ухода за кожей, расположенный в Ташкенте."
+               data-en="Kashuk Academy is an educational center and practice in the field of aesthetic cosmetology and skincare, located in Tashkent.">
+                Школа косметологии Светланы Кашук — это образовательный центр и практика в области эстетической косметологии и ухода за кожей, расположенный в Ташкенте.
+            </p>
+
+            <!-- Added data-en for second paragraph -->
+            <p class="about-paragraph"
+               data-ru="Головной офис школы находится в Санкт-Петербурге."
+               data-en="The main office of the academy is located in Saint Petersburg.">
+                Головной офис школы находится в Санкт-Петербурге.
+            </p>
+
+            <!-- Added data-en for subtitle -->
+            <h3 class="about-subtitle"
+                data-ru="💼 Что предлагает школа"
+                data-en="💼 What the School Offers">💼 Что предлагает школа</h3>
+            <ul class="about-list">
+                <!-- Added data-en for list items -->
+                <li data-ru="Обучение и повышение квалификации по современным методикам косметологии и эстетической медицины"
+                    data-en="Training and professional development in modern cosmetology and aesthetic medicine techniques">Обучение и повышение квалификации по современным методикам косметологии и эстетической медицины</li>
+                <li data-ru="Практические занятия и отработка навыков"
+                    data-en="Practical classes and hands-on skills training">Практические занятия и отработка навыков</li>
+                <li data-ru="Подготовка специалистов для работы в клиниках, салонах красоты или ведения собственной практики"
+                    data-en="Preparation of specialists for work in clinics, beauty salons, or private practice">Подготовка специалистов для работы в клиниках, салонах красоты или ведения собственной практики</li>
             </ul>
 
-            <button class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-        <ul class="nav-menu mobile" id="mobileMenu">
-            <li><a href="#services" data-uz="Хидматлар" data-ru="Услуги" data-en="Services">Хидматлар</a></li>
-            <li><a href="#staff" data-uz="Xодимлар" data-ru="Преподаватели" data-en="Staff">Xодимлар</a></li>
-            <li><a href="#about" data-uz="Тўғрисида" data-ru="О нас" data-en="About">Тўғрисида</a></li>
-            <li><a href="#contact" data-uz="Алоқа" data-ru="Контакты" data-en="Contact">Алоқа</a></li>
-        </ul>
-    </header>
+            <!-- Added data-en for programs subtitle -->
+            <h3 class="about-subtitle"
+                data-ru="🎓 Программы обучения"
+                data-en="🎓 Training Programs">🎓 Программы обучения</h3>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-background"></div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <div class="hero-badge" data-uz="✨ KASHUK COSMETOLOGY SCHOOL" data-ru="✨ KASHUK COSMETOLOGY SCHOOL"
-                    data-en="✨ KASHUK COSMETOLOGY SCHOOL">✨ KASHUK COSMETOLOGY SCHOOL</div>
-                <h1 class="hero-title">
-                    <span data-uz="Ҳузур ва" data-ru="Комфорт и" data-en="Comfort and">Ҳузур ва</span>
-                    <span class="gradient-text" data-uz="Граниёз" data-ru="Блеск" data-en="Radiance">Граниёз</span>
-                </h1>
-                <p class="hero-subtitle"
-                    data-uz="Ҳозирги жамон косметология ва сўрма рассомлик техникасини ўзлаштиринг. Ўзбекистонида энг машҳур касб ўқитиш маркази."
-                    data-ru="Овладейте современными техниками косметологии и татуажа бровей. Самый известный центр профессионального обучения в Узбекистане."
-                    data-en="Master modern cosmetology and eyebrow tattooing techniques. The most renowned professional training center in Uzbekistan.">
-                    Ҳозирги жамон косметология ва сўрма рассомлик техникасини ўзлаштиринг. Ўзбекистонида энг машҳур касб
-                    ўқитиш маркази.</p>
-                <div class="hero-buttons">
-                    <button class="btn btn-primary" data-uz="ЭНДДИ ЎЗИЛ" data-ru="ЗАРЕГИСТРИРУЙТЕСЬ"
-                        data-en="REGISTER NOW">ЭНДДИ ЎЗИЛ</button>
-                    <button class="btn btn-secondary" data-uz="БАТАФСИЛ" data-ru="ПОДРОБНЕЕ"
-                        data-en="LEARN MORE">БАТАФСИЛ</button>
-                </div>
-            </div>
-            <div class="hero-logo">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4621-nh4pA6wdE7Sh5qnrnq9SxYMmWIMPAs.jpg"
-                    alt="Kashuk Academy Logo" class="logo-image">
-            </div>
+            <!-- Added data-en for basic course title -->
+            <p class="about-paragraph"><strong data-ru="✔️ Базовый курс косметологии"
+                                               data-en="✔️ Basic Cosmetology Course">✔️ Базовый курс косметологии</strong></p>
+            <ul class="about-list">
+                <li data-ru="Основы эстетической косметологии и уход за кожей"
+                    data-en="Fundamentals of aesthetic cosmetology and skincare">Основы эстетической косметологии и уход за кожей</li>
+                <li data-ru="Теория + практика на моделях"
+                    data-en="Theory + hands-on practice with models">Теория + практика на моделях</li>
+                <li data-ru="Освоение основных процедур по лицу"
+                    data-en="Mastery of main facial procedures">Освоение основных процедур по лицу</li>
+                <li><strong data-ru="Сертификат международного образца"
+                            data-en="International Standard Certificate">Сертификат международного образца</strong></li>
+            </ul>
+
+            <!-- Added data-en for injection cosmetology title -->
+            <p class="about-paragraph"><strong data-ru="✔️ Инъекционная косметология"
+                                               data-en="✔️ Injection Cosmetology">✔️ Инъекционная косметология</strong></p>
+            <ul class="about-list">
+                <li data-ru="Ботулинотерапия (ботокс)"
+                    data-en="Botulinum therapy (Botox)">Ботулинотерапия (ботокс)</li>
+                <li data-ru="Контурная пластика (филлеры)"
+                    data-en="Contouring with fillers">Контурная пластика (филлеры)</li>
+                <li data-ru="Тредлифтинг (мезонити)"
+                    data-en="Thread lifting (mesothread)">Тредлифтинг (мезонити)</li>
+                <li data-ru="Мезотерапия и плазмолифтинг"
+                    data-en="Mesotherapy and plasmolift">Мезотерапия и плазмолифтинг</li>
+                <li data-ru="Полимолочная кислота"
+                    data-en="Polylactic acid (PLA)">Полимолочная кислота</li>
+                <li data-ru="Отработка техник на моделях"
+                    data-en="Practice of techniques on models">Отработка техник на моделях</li>
+            </ul>
+
+            <!-- Added data-en for specialized seminars title -->
+            <p class="about-paragraph"><strong data-ru="✔️ Специализированные семинары и тренинги"
+                                               data-en="✔️ Specialized Seminars and Trainings">✔️ Специализированные семинары и тренинги</strong></p>
+            <ul class="about-list">
+                <li data-ru="Нитевой лифтинг"
+                    data-en="Thread lifting">Нитевой лифтинг</li>
+                <li data-ru="Коллагеностимуляторы"
+                    data-en="Collagen stimulators">Коллагеностимуляторы</li>
+                <li data-ru="Практикумы по современным техникам"
+                    data-en="Workshops on modern techniques">Практикумы по современным техникам</li>
+                <li data-ru="Обучение неотложной помощи в косметологии"
+                    data-en="Emergency care training in cosmetology">Обучение неотложной помощи в косметологии</li>
+            </ul>
+
+            <!-- Added data-en for documents subtitle -->
+            <h3 class="about-subtitle"
+                data-ru="📜 Документы и результаты"
+                data-en="📜 Documents and Results">📜 Документы и результаты</h3>
+            <!-- Added data-en for documents paragraph -->
+            <p class="about-paragraph"
+               data-ru="После окончания обучения учащиеся получают сертификат международного образца, который позволяет работать в салонах, клиниках или открыть собственную практику."
+               data-en="Upon completion of training, students receive an international standard certificate that allows them to work in salons, clinics, or establish their own practice.">
+                После окончания обучения учащиеся получают сертификат международного образца, который позволяет работать в салонах, клиниках или открыть собственную практику.
+            </p>
+
+            <!-- Added data-en for testimonials subtitle -->
+            <h3 class="about-subtitle"
+                data-ru="🌟 Отзывы выпускников"
+                data-en="🌟 Graduate Testimonials">🌟 Отзывы выпускников</h3>
+            <ul class="about-list">
+                <li data-ru="Профессиональный подход преподавателей"
+                    data-en="Professional approach of instructors">Профессиональный подход преподавателей</li>
+                <li data-ru="Большое количество практики"
+                    data-en="Abundant hands-on practice">Большое количество практики</li>
+                <li data-ru="Индивидуальное внимание к каждому студенту"
+                    data-en="Individual attention to each student">Индивидуальное внимание к каждому студенту</li>
+                <li data-ru="Дружелюбная атмосфера и поддержка после обучения"
+                    data-en="Friendly atmosphere and ongoing support after graduation">Дружелюбная атмосфера и поддержка после обучения</li>
+            </ul>
         </div>
-    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-uz="Ёнғин Хизматлар" data-ru="Наши услуги" data-en="Our Services">Ёнғин
-                    Хизматлар</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle"
-                    data-uz="Барча косметологик ва эстетик услугалар учун биз сизни қабул қиламиз"
-                    data-ru="Мы предлагаем полный спектр косметологических и эстетических услуг"
-                    data-en="We offer a complete range of cosmetic and aesthetic services">Барча косметологик ва эстетик
-                    услугалар учун биз сизни қабул қиламиз</p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3 class="service-title" data-uz="Микроблейдинг" data-ru="Микроблейдинг" data-en="Microblading">
-                        Микроблейдинг</h3>
-                    <ul class="service-items">
-                        <li><span class="check-mark">✓</span> <span data-uz="Мойли сўрма" data-ru="Нежные брови"
-                                data-en="Gentle Brows">Мойли сўрма</span></li>
-                        <li><span class="check-mark">✓</span> <span data-uz="Автоматик техника"
-                                data-ru="Автоматическая техника" data-en="Automatic technique">Автоматик техника</span>
-                        </li>
-                        <li><span class="check-mark">✓</span> <span data-uz="Профессионал" data-ru="Профессионально"
-                                data-en="Professional">Профессионал</span></li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <h3 class="service-title" data-uz="Ласер Процедур" data-ru="Лазерные процедуры"
-                        data-en="Laser Procedures">Ласер Процедур</h3>
-                    <ul class="service-items">
-                        <li><span class="check-mark">✓</span> <span data-uz="Сустин Ласер" data-ru="Устойчивый лазер"
-                                data-en="Durable Laser">Сустин Ласер</span></li>
-                        <li><span class="check-mark">✓</span> <span data-uz="Қўдират" data-ru="Мощный"
-                                data-en="Powerful">Қўдират</span></li>
-                        <li><span class="check-mark">✓</span> <span data-uz="Ҳифза" data-ru="Безопасно"
-                                data-en="Safe">Ҳифза</span></li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <h3 class="service-title" data-uz="Қўллилик" data-ru="Маникюр" data-en="Nails">Қўллилик</h3>
-                    <ul class="service-items">
-                        <li><span class="check-mark">✓</span> <span data-uz="Манюр" data-ru="Маникюр"
-                                data-en="Manicure">Манюр</span></li>
-                        <li><span class="check-mark">✓</span> <span data-uz="Педикюр" data-ru="Педикюр"
-                                data-en="Pedicure">Педикюр</span></li>
-                        <li><span class="check-mark">✓</span> <span data-uz="Дизайн" data-ru="Дизайн"
-                                data-en="Design">Дизайн</span></li>
-                    </ul>
-                </div>
-
-                <div class="service-card">
-                    <h3 class="service-title" data-uz="Сўрма Услуги" data-ru="Услуги татуажа" data-en="Tattoo Services">
-                        Сўрма Услуги</h3>
-                    <ul class="service-items">
-                        <li><span class="check-mark">✓</span> <span data-uz="Қўйдирма Сўрма"
-                                data-ru="Перманентный татуаж" data-en="Permanent Tattoo">Қўйдирма Сўрма</span></li>
-                        <li><span class="check-mark">✓</span> <span data-uz="Рассомлик" data-ru="Живопись"
-                                data-en="Artistry">Рассомлик</span></li>
-                        <li><span class="check-mark">✓</span> <span data-uz="Иноватив" data-ru="Инновативный"
-                                data-en="Innovative">Иноватив</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="features-grid">
-                <div class="feature-box">
-                    <div class="feature-number">5+</div>
-                    <p class="feature-label" data-uz="Йилик Тажриба" data-ru="Лет опыта" data-en="Years Experience">
-                        Йилик Тажриба</p>
-                </div>
-                <div class="feature-box">
-                    <div class="feature-number">2000+</div>
-                    <p class="feature-label" data-uz="Қаноатбахш Талабалар" data-ru="Довольных студентов"
-                        data-en="Satisfied Students">Қаноатбахш Талабалар</p>
-                </div>
-                <div class="feature-box">
-                    <div class="feature-number">100%</div>
-                    <p class="feature-label" data-uz="Ижодий Методлар" data-ru="Творческие методы"
-                        data-en="Creative Methods">Ижодий Методлар</p>
-                </div>
-                <div class="feature-box">
-                    <div class="feature-number">24/7</div>
-                    <p class="feature-label" data-uz="Қўлай Шартлар" data-ru="Удобные условия"
-                        data-en="Convenient Terms">Қўлай Шартлар</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Staff Section Added -->
-    <section id="staff" class="staff">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-uz="Бизнинг Ходимлар" data-ru="Наши преподаватели" data-en="Our Staff">
-                    Бизнинг Ходимлар</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle" data-uz="Касбга эга ва тажрибали ўқитувчилар жамоаси"
-                    data-ru="Команда опытных и высококвалифицированных преподавателей"
-                    data-en="Team of experienced and highly qualified instructors">Касбга эга ва тажрибали ўқитувчилар
-                    жамоаси</p>
-            </div>
-
-            <div class="staff-grid">
-                <!-- Instructor 1 -->
-                <div class="staff-card">
-                    <div class="staff-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CbhfcnHgIlCjnS5qBdEEEUKu3aufS2.png"
-                            alt="Махбуба Саломовна">
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name" data-uz="Махбуба Саломовна" data-ru="Махбуба Саломовна"
-                            data-en="Makhbuba Salomovna">Махбуба Саломовна</h3>
-                        <p class="staff-title" data-uz="Косметолог-коуч" data-ru="Косметолог-коуч"
-                            data-en="Cosmetologist-Coach">Косметолог-коуч</p>
-                        <ul class="staff-courses">
-                            <li data-uz="30 йиллик тажриба" data-ru="30 лет опыта" data-en="30 years experience">30
-                                йиллик тажриба</li>
-                            <li data-uz="Нитевой лифтинг" data-ru="Нитевой лифтинг" data-en="Thread lifting">Нитевой
-                                лифтинг</li>
-                            <li data-uz="Полимолочная кислота" data-ru="Полимолочная кислота" data-en="Polylactic acid">
-                                Полимолочная кислота</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Instructor 2 -->
-                <div class="staff-card">
-                    <div class="staff-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4499.JPG-qGIl3ZZD5H6i5DiXzvV64ES8KWYGPH.jpeg"
-                            alt="Санам Механовна">
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name" data-uz="Санам Механовна" data-ru="Санам Механовна"
-                            data-en="Sanam Mekhanovna">Санам Механовна</h3>
-                        <p class="staff-title" data-uz="Дерматовенеролог" data-ru="Дерматовенеролог"
-                            data-en="Dermatovenereologist">Дерматовенеролог</p>
-                        <ul class="staff-courses">
-                            <li data-uz="Эстетик косметология" data-ru="Эстетическая косметология"
-                                data-en="Aesthetic cosmetology">Эстетик косметология</li>
-                            <li data-uz="Уй медицина" data-ru="Домашняя медицина" data-en="Home medicine">Уй медицина
-                            </li>
-                            <li data-uz="Мезотерапия" data-ru="Мезотерапия" data-en="Mesotherapy">Мезотерапия</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Instructor 3 -->
-                <div class="staff-card">
-                    <div class="staff-image">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4398.JPG-Gm8EWvFWEDgBuY78jmFapTiYcbDo0u.jpeg"
-                            alt="Гузаль Уралговна">
-                    </div>
-                    <div class="staff-info">
-                        <h3 class="staff-name" data-uz="Гузаль Уралговна" data-ru="Гузаль Уралговна"
-                            data-en="Guzal Uralgovna">Гузаль Уралговна</h3>
-                        <p class="staff-title" data-uz="Ўқитувчи" data-ru="Преподаватель" data-en="Instructor">Ўқитувчи
-                        </p>
-                        <ul class="staff-courses">
-                            <li data-uz="Эстетика ва тери қўлини" data-ru="Эстетика и уход за кожей"
-                                data-en="Aesthetics and skincare">Эстетика ва тери қўлини</li>
-                            <li data-uz="10 йиллик тажриба" data-ru="10 лет опыта" data-en="10 years experience">10
-                                йиллик тажриба</li>
-                            <li data-uz="Кашук мактабида ўқитади" data-ru="Преподает в школе Кашук"
-                                data-en="Teaches at Kashuk School">Кашук мактабида ўқитади</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container about-grid">
-            <div class="about-text">
-                <h2 class="section-title" data-uz="Кашук Академияси Тўғрисида" data-ru="О Kashuk Academy"
-                    data-en="About Kashuk Academy">Кашук Академияси Тўғрисида</h2>
-                <div class="title-underline"></div>
-                <p class="about-paragraph"
-                    data-uz="Биз Ўзбекистонда энг юқори сифатли косметологик таълим берувчи муассаса. Ҳар бир талаба шахсий эътибор ва кўллилик техникасини ўзлаштириши мумкин."
-                    data-ru="Мы являемся ведущим учреждением, предоставляющим высочайшее качество косметологического образования в Узбекистане. Каждый студент может овладеть передовыми техниками под личным руководством."
-                    data-en="We are the leading institution providing the highest quality cosmetological education in Uzbekistan. Each student can master advanced techniques under personal guidance.">
-                    Биз Ўзбекистонда энг юқори сифатли косметологик таълим берувчи муассаса. Ҳар бир талаба шахсий
-                    эътибор ва кўллилик техникасини ўзлаштириши мумкин.</p>
-                <p class="about-paragraph"
-                    data-uz="Ҳозирги йилда 2000 дан ортиқ талаба мувaffaqiyatли ўзи битирдилар ва сўрма рассомлик саҳосида дийоралар қилмоқда."
-                    data-ru="В этом году более 2000 студентов успешно завершили обучение и работают в сфере татуажа бровей."
-                    data-en="This year, over 2000 students successfully completed their training and are working in the eyebrow tattooing industry.">
-                    Ҳозирги йилда 2000 дан ортиқ талаба мувaffaqiyatли ўзи битирдилар ва сўрма рассомлик саҳосида
-                    дийоралар қилмоқда.</p>
-                <div class="about-features">
-                    <div class="about-feature">
-                        <span class="feature-icon">🎓</span>
-                        <span data-uz="Сертификалашган ўқитувчилар" data-ru="Сертифицированные учителя"
-                            data-en="Certified Teachers">Сертификалашган ўқитувчилар</span>
-                    </div>
-                    <div class="about-feature">
-                        <span class="feature-icon">🏆</span>
-                        <span data-uz="Масъул ва юқори сифата ишчи қўллар"
-                            data-ru="Ответственные и высокопрофессиональные кадры"
-                            data-en="Responsible and highly professional staff">Масъул ва юқори сифата ишчи
-                            қўллар</span>
-                    </div>
-                </div>
-            </div>
-            <img class="about-image"
+        <img
+                class="about-image"
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4628%20%281%29-iyw8LPA7XbAiIsmcWVU0zP3iuhUVVr.jpg"
-                alt="Kashuk Academy" />
+                alt="Kashuk Academy"
+        />
+    </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" data-uz="Бир Дама Алоқа Қоилсин" data-ru="Свяжитесь с нами" data-en="Get In Touch">Бир Дама Алоқа Қоилсин</h2>
+            <div class="title-underline"></div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-uz="Бир Дама Алоқа Қоилсин" data-ru="Свяжитесь с нами"
-                    data-en="Get In Touch">Бир Дама Алоқа Қоилсин</h2>
-                <div class="title-underline"></div>
-            </div>
+        <div class="contact-grid">
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label data-uz="Сизнинг Исмингиз" data-ru="Ваше имя" data-en="Your Name">Сизнинг Исмингиз</label>
+                    <input type="text" class="form-input" placeholder="Исм" data-uz-placeholder="Исм" data-ru-placeholder="Имя" data-en-placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <label data-uz="Телефон" data-ru="Телефон" data-en="Phone">Телефон</label>
+                    <input type="tel" class="form-input" placeholder="+998" data-uz-placeholder="+998" data-ru-placeholder="+998" data-en-placeholder="+998" required>
+                </div>
+                <div class="form-group">
+                    <label data-uz="Сўз" data-ru="Сообщение" data-en="Message">Сўз</label>
+                    <textarea rows="4" class="form-input" placeholder="Сизнинг хабарингиз" data-uz-placeholder="Сизнинг хабарингиз" data-ru-placeholder="Ваше сообщение" data-en-placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-uz="ЖЎНАТИШ" data-ru="ОТПРАВИТЬ" data-en="SEND">ЖЎНАТИШ</button>
+            </form>
 
-            <div class="contact-grid">
-                <form class="contact-form" onsubmit="handleSubmit(event)">
-                    <div class="form-group">
-                        <label data-uz="Сизнинг Исмингиз" data-ru="Ваше имя" data-en="Your Name">Сизнинг
-                            Исмингиз</label>
-                        <input type="text" class="form-input" placeholder="Исм" data-uz-placeholder="Исм"
-                            data-ru-placeholder="Имя" data-en-placeholder="Name" required>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <!-- Location -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                        </svg>
                     </div>
-                    <div class="form-group">
-                        <label data-uz="Телефон" data-ru="Телефон" data-en="Phone">Телефон</label>
-                        <input type="tel" class="form-input" placeholder="+998" data-uz-placeholder="+998"
-                            data-ru-placeholder="+7" data-en-placeholder="+1" required>
-                    </div>
-                    <div class="form-group">
-                        <label data-uz="Сўз" data-ru="Сообщение" data-en="Message">Сўз</label>
-                        <textarea rows="4" class="form-input" placeholder="Сизнинг хабарингиз"
-                            data-uz-placeholder="Сизнинг хабарингиз" data-ru-placeholder="Ваше сообщение"
-                            data-en-placeholder="Your message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" data-uz="ЖЎНАТИШ" data-ru="ОТПРАВИТЬ"
-                        data-en="SEND">ЖЎНАТИШ</button>
-                </form>
-
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <!-- Location -->
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4 data-uz="Манзил" data-ru="Адрес" data-en="Address">Манзил</h4>
-                            <p data-uz="Ташкент, Мирзо Улугбек ч., 123" data-ru="Ташкент, улица Мирзо Улугбека, 123"
-                                data-en="Tashkent, Mirzo Ulugbek St., 123">
-                                Ташкент, Мирзо Улугбек ч., 123
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <!-- Phone -->
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.3.6 1.3 1.3v3.5c0 .7-.6 1.3-1.3 1.3C9.8 21.6 2.4 14.2 2.4 5.3 2.4 4.6 3 4 3.7 4h3.5c.7 0 1.3.6 1.3 1.3 0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.2 2.2z" />
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4 data-uz="Телефон" data-ru="Телефон" data-en="Phone">Телефон</h4>
-                            <p>+998 90 123 45 67</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <!-- Email -->
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6zm3-.5 7 4.8 7-4.8H5zm14 2.6-7 4.8-7-4.8V18h14V8.1z" />
-                            </svg>
-                        </div>
-                        <div class="contact-details">
-                            <h4 data-uz="Электрон Почтаси" data-ru="Электронная почта" data-en="Email">
-                                Электрон Почтаси
-                            </h4>
-                            <p>info@kashuk.uz</p>
-                        </div>
+                    <div class="contact-details">
+                        <h4 data-uz="Манзил" data-ru="Адрес" data-en="Address">Манзил</h4>
+                        <p data-uz="Ташкент, Мирзо Улугбек ч., 123"
+                           data-ru="Ташкент, напротив парка Навруз, Лабзак 20!"
+                           data-en="Tashkent, Labzak 20, opposite Navruz Park">
+                            Ташкент  , напротив парка Навруз, Лабзак 20!
+                        </p>
                     </div>
                 </div>
 
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <!-- Phone -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M6.6 10.8c1.5 3 3.6 5.1 6.6 6.6l2.2-2.2c.3-.3.8-.4 1.2-.3 1.3.4 2.7.6 4.1.6.7 0 1.3.6 1.3 1.3v3.5c0 .7-.6 1.3-1.3 1.3C9.8 21.6 2.4 14.2 2.4 5.3 2.4 4.6 3 4 3.7 4h3.5c.7 0 1.3.6 1.3 1.3 0 1.4.2 2.8.6 4.1.1.4 0 .9-.3 1.2l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h4 data-uz="Телефон" data-ru="Телефон" data-en="Phone">Телефон</h4>
+                        <p> +998 90 837 36 30</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <!-- Email -->
+                        <svg viewBox="0 0 24 24">
+                            <path d="M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6zm3-.5 7 4.8 7-4.8H5zm14 2.6-7 4.8-7-4.8V18h14V8.1z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h4 data-uz="Электрон Почтаси"
+                            data-ru="Электронная почта"
+                            data-en="Email">
+                            Электрон Почтаси
+                        </h4>
+                        <p>info@kashuk.uz</p>
+                    </div>
+                </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3 data-uz="Kashuk Academy" data-ru="Kashuk Academy" data-en="Kashuk Academy">Kashuk Academy</h3>
-                    <p data-uz="Энг мушаррафи ва сўрма рассомлик академияси" data-ru="Самая престижная академия татуажа"
-                        data-en="Most prestigious tattoo academy">Энг мушаррафи ва сўрма рассомлик академияси</p>
-                </div>
-                <div class="footer-section">
-                    <h4 data-uz="Йўналиши" data-ru="Направления" data-en="Directions">Йўналиши</h4>
-                    <ul>
-                        <li><a href="#" data-uz="Микроблейдинг" data-ru="Микроблейдинг"
-                                data-en="Microblading">Микроблейдинг</a></li>
-                        <li><a href="#" data-uz="Ласер" data-ru="Лазер" data-en="Laser">Ласер</a></li>
-                        <li><a href="#" data-uz="Қўллилик" data-ru="Маникюр" data-en="Nails">Қўллилик</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 data-uz="Хизматлар" data-ru="Услуги" data-en="Services">Хизматлар</h4>
-                    <ul>
-                        <li><a href="#" data-uz="Таълим" data-ru="Образование" data-en="Education">Таълим</a></li>
-                        <li><a href="#" data-uz="Мастеркласс" data-ru="Мастер-класс"
-                                data-en="Masterclass">Мастеркласс</a></li>
-                        <li><a href="#" data-uz="Консултация" data-ru="Консультация"
-                                data-en="Consultation">Консултация</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 data-uz="Алоқа" data-ru="Контакты" data-en="Contact">Алоқа</h4>
-                    <div class="social-links">
-                        <!-- Facebook -->
-                        <a href="#" class="social-btn" aria-label="Facebook">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V12H16l-.4 3h-2.1v7A10 10 0 0 0 22 12z" />
-                            </svg>
-                        </a>
-
-                        <!-- Instagram -->
-                        <a href="#" class="social-btn" aria-label="Instagram">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm5.8-.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z" />
-                            </svg>
-                        </a>
-
-                        <!-- YouTube -->
-                        <a href="#" class="social-btn" aria-label="YouTube">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M23 7.5s-.2-1.7-.9-2.4c-.8-.9-1.7-.9-2.1-1C17.2 3.9 12 3.9 12 3.9h0s-5.2 0-8 .2c-.4.1-1.3.1-2.1 1C1.2 5.8 1 7.5 1 7.5S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.7.9 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.7.2 7.7.2s5.2 0 8-.2c.4-.1 1.3-.1 2.1-1 .7-.7.9-2.4.9-2.4s.2-1.9.2-3.8v-1.4C23.2 9.4 23 7.5 23 7.5zM9.6 14.6V9.4l4.8 2.6-4.8 2.6z" />
-                            </svg>
-                        </a>
-                    </div>
-
-                </div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3 data-uz="Kashuk Academy" data-ru="Kashuk Cosmetology School" data-en="Kashuk Cosmetology School">Kashuk Cosmetology School</h3>
+                <p data-uz="Энг мушаррафи ва сўрма рассомлик академияси" data-ru="Самая престижная академия татуажа" data-en="Most prestigious tattoo academy">Энг мушаррафи ва сўрма рассомлик академияси</p>
             </div>
-            <div class="footer-bottom">
-                <p data-uz="© 2025 Kashuk Cosmetology Academy. Барча ҳуқуқлар сақланди."
-                    data-ru="© 2025 Kashuk Cosmetology Academy. Все права защищены."
-                    data-en="© 2025 Kashuk Cosmetology Academy. All rights reserved.">© 2025 Kashuk Cosmetology Academy.
-                    Барча ҳуқуқлар сақланди.</p>
+            <div class="footer-section">
+                <h4 data-uz="Йўналиши" data-ru="Направления" data-en="Directions">Йўналиши</h4>
+                <ul>
+                    <li><a href="#" data-uz="Микроблейдинг" data-ru="Микроблейдинг" data-en="Microblading">Микроблейдинг</a></li>
+                    <li><a href="#" data-uz="Ласер" data-ru="Лазер" data-en="Laser">Ласер</a></li>
+                    <li><a href="#" data-uz="Қўллилик" data-ru="Маникюр" data-en="Nails">Қўллилик</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-uz="Хизматлар" data-ru="Услуги" data-en="Services">Хизматлар</h4>
+                <ul>
+                    <li><a href="#" data-uz="Таълим" data-ru="Образование" data-en="Education">Таълим</a></li>
+                    <li><a href="#" data-uz="Мастеркласс" data-ru="Мастер-класс" data-en="Masterclass">Мастеркласс</a></li>
+                    <li><a href="#" data-uz="Консултация" data-ru="Консультация" data-en="Consultation">Консултация</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-uz="Алоқа" data-ru="Контакты" data-en="Contact">Алоқа</h4>
+                <div class="social-links">
+                    <!-- Facebook -->
+                    <a href="#" class="social-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M22 12a10 10 0 1 0-11.6 9.9v-7H8v-3h2.4V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .1 2 .1v2.3h-1.1c-1.1 0-1.4.7-1.4 1.4V12H16l-.4 3h-2.1v7A10 10 0 0 0 22 12z"/>
+                        </svg>
+                    </a>
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/kashuk_cosmetology_school/?utm_source=chatgpt.com" class="social-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.5A4.5 4.5 0 1 0 16.5 12 4.5 4.5 0 0 0 12 7.5zm5.8-.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1z"/>
+                        </svg>
+                    </a>
+
+                    <!-- YouTube -->
+                    <a href="#" class="social-btn" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23 7.5s-.2-1.7-.9-2.4c-.8-.9-1.7-.9-2.1-1C17.2 3.9 12 3.9 12 3.9h0s-5.2 0-8 .2c-.4.1-1.3.1-2.1 1C1.2 5.8 1 7.5 1 7.5S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.7.9 2.4c.8.9 1.9.9 2.4 1 1.7.2 7.7.2 7.7.2s5.2 0 8-.2c.4-.1 1.3-.1 2.1-1 .7-.7.9-2.4.9-2.4s.2-1.9.2-3.8v-1.4C23.2 9.4 23 7.5 23 7.5zM9.6 14.6V9.4l4.8 2.6-4.8 2.6z"/>
+                        </svg>
+                    </a>
+                </div>
+
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p data-uz="© 2025 Kashuk Cosmetology School. Барча ҳуқуқлар сақланди." data-ru="© 2025 Kashuk Cosmetology Academy. Все права защищены." data-en="© 2025 Kashuk Cosmetology Academy. All rights reserved.">© 2025 Kashuk Cosmetology Academy. Барча ҳуқуқлар сақланди.</p>
+        </div>
+    </div>
+</footer>
 
-    <!-- JavaScript -->
-    <script>
-        // Mobile Menu Toggle
-        function toggleMenu() {
-            const menu = document.getElementById("mobileMenu");
-            menu.classList.toggle("active");
-        }
+<!-- JavaScript -->
+<script>
+    // Mobile Menu Toggle
+    function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("active");
+    }
 
-        // Close menu when link clicked
-        document.querySelectorAll(".nav-menu.mobile a").forEach((link) => {
-            link.addEventListener("click", () => {
-                document.getElementById("mobileMenu").classList.remove("active");
-            });
+    // Close menu when link clicked
+    document.querySelectorAll(".nav-menu.mobile a").forEach((link) => {
+        link.addEventListener("click", () => {
+            document.getElementById("mobileMenu").classList.remove("active");
+        });
+    });
+
+    // Language Switching
+    let currentLanguage = "uz";
+
+    function changeLanguage(lang) {
+        currentLanguage = lang;
+
+        // Update active button
+        document.querySelectorAll(".lang-btn").forEach((btn) => {
+            btn.classList.remove("active");
+        });
+        event.target.classList.add("active");
+
+        // Update all text content
+        document.querySelectorAll("[data-" + lang + "]").forEach((element) => {
+            element.textContent = element.getAttribute("data-" + lang);
         });
 
-        // Language Switching
-        let currentLanguage = "uz";
-
-        function changeLanguage(lang) {
-            currentLanguage = lang;
-
-            // Update active button
-            document.querySelectorAll(".lang-btn").forEach((btn) => {
-                btn.classList.remove("active");
-            });
-            event.target.classList.add("active");
-
-            // Update all text content
-            document.querySelectorAll("[data-" + lang + "]").forEach((element) => {
-                element.textContent = element.getAttribute("data-" + lang);
-            });
-
-            // Update form placeholders
-            document.querySelectorAll("[data-" + lang + "-placeholder]").forEach((element) => {
-                element.placeholder = element.getAttribute("data-" + lang + "-placeholder");
-            });
-
-            // Update HTML lang attribute
-            document.documentElement.lang = lang;
-
-            // Save preference
-            localStorage.setItem("preferredLanguage", lang);
-        }
-
-        // Load saved language preference
-        window.addEventListener("DOMContentLoaded", () => {
-            const savedLang = localStorage.getItem("preferredLanguage") || "uz";
-            if (savedLang !== "uz") {
-                document.querySelector(`.lang-btn[onclick="changeLanguage('${savedLang}')"]`).click();
-            }
+        // Update form placeholders
+        document.querySelectorAll("[data-" + lang + "-placeholder]").forEach((element) => {
+            element.placeholder = element.getAttribute("data-" + lang + "-placeholder");
         });
 
-        // Form Submission
-        function handleSubmit(event) {
-            event.preventDefault();
+        // Update HTML lang attribute
+        document.documentElement.lang = lang;
 
-            const form = event.target;
-            const name = form.querySelector('input[type="text"]').value;
-            const phone = form.querySelector('input[type="tel"]').value;
-            const message = form.querySelector("textarea").value;
+        // Save preference
+        localStorage.setItem("preferredLanguage", lang);
+    }
 
-            // Simple validation
-            if (!name || !phone || !message) {
-                alert(
-                    currentLanguage === "uz"
-                        ? "Барча майдонларни толдиринг"
-                        : currentLanguage === "ru"
-                            ? "Заполните все поля"
-                            : "Please fill all fields"
-                );
-                return;
-            }
+    // Load saved language preference
+    window.addEventListener("DOMContentLoaded", () => {
+        const savedLang = localStorage.getItem("preferredLanguage") || "uz";
+        if (savedLang !== "uz") {
+            document.querySelector(`.lang-btn[onclick="changeLanguage('${savedLang}')"]`).click();
+        }
+    });
 
-            console.log("Form submitted:", { name, phone, message });
-            form.reset();
+    // Form Submission
+    function handleSubmit(event) {
+        event.preventDefault();
 
-            const successMsg =
+        const form = event.target;
+        const name = form.querySelector('input[type="text"]').value;
+        const phone = form.querySelector('input[type="tel"]').value;
+        const message = form.querySelector("textarea").value;
+
+        // Simple validation
+        if (!name || !phone || !message) {
+            alert(
                 currentLanguage === "uz"
-                    ? "Жўнатилди! Биз сиз билан алоқага чиқамиз."
+                    ? "Барча майдонларни толдиринг"
                     : currentLanguage === "ru"
-                        ? "Отправлено! Мы свяжемся с вами."
-                        : "Sent! We will contact you.";
-
-            alert(successMsg);
+                        ? "Заполните все поля"
+                        : "Please fill all fields"
+            );
+            return;
         }
 
-        // Smooth scroll enhancement
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-            anchor.addEventListener("click", function (e) {
-                const href = this.getAttribute("href");
-                if (href !== "#" && document.querySelector(href)) {
-                    e.preventDefault();
-                    document.querySelector(href).scrollIntoView({
-                        behavior: "smooth",
-                        block: "start",
-                    });
-                }
-            });
-        });
+        console.log("Form submitted:", { name, phone, message });
+        form.reset();
 
-        // Add scroll animation for elements
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: "0px 0px -100px 0px",
-        };
+        const successMsg =
+            currentLanguage === "uz"
+                ? "Жўнатилди! Биз сиз билан алоқага чиқамиз."
+                : currentLanguage === "ru"
+                    ? "Отправлено! Мы свяжемся с вами."
+                    : "Sent! We will contact you.";
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animation = "fadeInUp 0.6s ease forwards";
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
+        alert(successMsg);
+    }
 
-        // Observe service cards and feature boxes
-        document.querySelectorAll(".service-card, .feature-box, .contact-item, .staff-card").forEach((el) => {
-            observer.observe(el);
-        });
-
-        // Header sticky shadow on scroll
-        window.addEventListener("scroll", () => {
-            const header = document.querySelector(".header");
-            if (window.scrollY > 100) {
-                header.style.boxShadow = "0 4px 12px rgba(251, 191, 36, 0.1)";
-            } else {
-                header.style.boxShadow = "none";
+    // Smooth scroll enhancement
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+            const href = this.getAttribute("href");
+            if (href !== "#" && document.querySelector(href)) {
+                e.preventDefault();
+                document.querySelector(href).scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
             }
         });
-    </script>
-</body>
+    });
 
+    // Add scroll animation for elements
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = "fadeInUp 0.6s ease forwards";
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe service cards and feature boxes
+    document.querySelectorAll(".service-card, .feature-box, .contact-item, .staff-card").forEach((el) => {
+        observer.observe(el);
+    });
+
+    // Header sticky shadow on scroll
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector(".header");
+        if (window.scrollY > 100) {
+            header.style.boxShadow = "0 4px 12px rgba(251, 191, 36, 0.1)";
+        } else {
+            header.style.boxShadow = "none";
+        }
+    });
+</script>
+</body>
 </html>
