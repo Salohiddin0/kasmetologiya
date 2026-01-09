@@ -1277,9 +1277,12 @@
             </h1>
             <p class="hero-subtitle" data-uz="Ҳозирги жамон косметология ва сўрма рассомлик техникасини ўзлаштиринг. Ўзбекистонида энг машҳур касб ўқитиш маркази." data-ru="Овладейте современными техниками косметологии и татуажа бровей. Самый известный центр профессионального обучения в Узбекистане." data-en="Master modern cosmetology and eyebrow tattooing techniques. The most renowned professional training center in Uzbekistan.">Ҳозирги жамон косметология ва сўрма рассомлик техникасини ўзлаштиринг. Ўзбекистонида энг машҳур касб ўқитиш маркази.</p>
             <div class="hero-buttons">
-                <button class="btn btn-primary" data-uz="ЭНДДИ ЎЗИЛ" data-ru="ЗАРЕГИСТРИРУЙТЕСЬ" data-en="REGISTER NOW">ЭНДДИ ЎЗИЛ</button>
-                <button class="btn btn-secondary" data-uz="БАТАФСИЛ" data-ru="ПОДРОБНЕЕ" data-en="LEARN MORE">БАТАФСИЛ</button>
+                <button class="btn btn-primary"
+                        data-ru="ЗАРЕГИСТРИРУЙТЕСЬ"
+                        data-en="REGISTER NOW"
+                        id="registerBtn">ЭНДДИ ЎЗИЛ</button>
             </div>
+
         </div>
         <div class="hero-logo">
             <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4621-nh4pA6wdE7Sh5qnrnq9SxYMmWIMPAs.jpg" alt="Kashuk Academy Logo" class="logo-image">
@@ -1314,7 +1317,7 @@
 
             <div class="service-card">
                 <h3 class="service-title"> Контурная пластика (филлеры)</h3>
-                <p class="service-desc">Интенсивный курс 3 дня/p>
+                <p class="service-desc">Интенсивный курс 3 дня</p>
             </div>
 
             <div class="service-card">
@@ -1689,7 +1692,19 @@
     </div>
 </footer>
 
-<!-- JavaScript -->
+<script>
+    // Buttonni tanlaymiz
+    const btn = document.getElementById('registerBtn');
+
+    // Click event qo‘shamiz
+    btn.addEventListener('click', function() {
+        // #contact bo‘limiga smooth scroll
+        const contactSection = document.querySelector('#contact');
+        if(contactSection){
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
 <script>
     // Mobile Menu Toggle
     function toggleMenu() {
@@ -1819,5 +1834,87 @@
         }
     });
 </script>
+<!-- ОБНОВЛЕННЫЙ JAVASCRIPT КОД -->
+<script>
+    // Telegram Bot Token
+    const BOT_TOKEN = '8534271763:AAG2n3yMQj3QbexS-KSuMruCSEgjpmqiMGE';
+    const CHAT_ID = '@kashuk_kasmetology_school'; // Kanal username
+
+    // Функция отправки сообщения
+    async function sendToTelegram(name, phone, message) {
+        const text = `
+🔔 <b>Новая заявка с сайта Kashuk Academy</b>
+
+📝 <b>Имя:</b> ${name}
+📱 <b>Телефон:</b> ${phone}
+💬 <b>Сообщение:</b> ${message}
+
+⏰ <b>Время:</b> ${new Date().toLocaleString()}
+        `;
+
+        try {
+            const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: CHAT_ID,
+                    text: text,
+                    parse_mode: 'HTML'
+                })
+            });
+
+            const data = await response.json();
+            return data.ok;
+        } catch (error) {
+            console.error('Ошибка при отправке в Telegram:', error);
+            return false;
+        }
+    }
+
+    // Обновленная функция отправки формы
+    async function handleSubmit(event) {
+        event.preventDefault();
+
+        const form = event.target;
+        const name = form.querySelector('input[type="text"]').value;
+        const phone = form.querySelector('input[type="tel"]').value;
+        const message = form.querySelector("textarea").value;
+
+        // Валидация
+        if (!name || !phone || !message) {
+            alert(
+                currentLanguage === "uz"
+                    ? "Барча майдонларни толдиринг"
+                    : currentLanguage === "ru"
+                        ? "Заполните все поля"
+                        : "Please fill all fields"
+            );
+            return;
+        }
+
+        // Отправка в Telegram
+        const sent = await sendToTelegram(name, phone, message);
+
+        if (sent) {
+            form.reset();
+            const successMsg =
+                currentLanguage === "uz"
+                    ? "✅ Жўнатилди! Биз сиз билан алоқага чиқамиз."
+                    : currentLanguage === "ru"
+                        ? "✅ Отправлено! Мы свяжемся с вами."
+                        : "✅ Sent! We will contact you.";
+            alert(successMsg);
+        } else {
+            const errorMsg =
+                currentLanguage === "uz"
+                    ? "❌ Хатолик! Улова сўрови қилинг."
+                    : currentLanguage === "ru"
+                        ? "❌ Ошибка отправки. Попробуйте снова."
+                        : "❌ Error sending. Please try again.";
+            alert(errorMsg);
+        }
+    }
+</script>
+
 </body>
 </html>
